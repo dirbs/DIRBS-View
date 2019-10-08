@@ -1,0 +1,57 @@
+
+# DIRBS-VIEW Global Configurations
+global:
+
+  # Mobile Operator Names & Numbers
+  num_of_mnos: 5
+  MNO_Names:
+    mno_0: {name: 'all', color: '#FFFFFF'}
+    mno_1: {name: 'operator1', color: '#ED1C24'}
+    mno_2: {name: 'operator2', color: '#06BDE9'}
+    mno_3: {name: 'operator3', color: '#8BCF3F'}
+    mno_4: {name: 'operator4', color: '#F68121'}
+    mno_5: {name: 'operator5', color: '#00449f'}
+
+  # Number of Sub-Systems involved in DIRBS-VIEW
+  subsystem_names: ["drs", "dps", "dvs", "lsds", "core_monthly", "core_range"]
+
+  # Number of Core Blocking conditions
+  num_core_blk_conds: 5
+
+  #List of all blocking conditions. must not be greater than num_core_blk_conds parameter
+  Blocking_conditions: ["gsma_not_found", "malformed", "not_on_registration_list", "on_local_stolen_list",
+                        "duplicate_compound"]
+
+  # Elasticsearch server IP
+  es_ip: "IP:PORT"
+
+  # Elasticsearch cardinality control parameter. Value must be from 100 to 40,000
+  precision_threshold: 40000
+
+  # Elasticsearch maximum trend value. must be set carefully in accordance with hardware resources
+  max_trend_val: 10
+
+  # Connection time out value for Elasticsearch in seconds. Default is 10 secs.
+  request_timeout: 60
+
+  # Elasticsearch Indices accessed through their Alias in DIRBS-VIEW
+  lsds_index: "alias_lsds"
+  drs_reg_index: "alias_drs_reg"
+  drs_dereg_index: ""
+  dps_index: "alias_dps"
+  dvs_index: ""
+  dashboard_index: "dashboard_data"
+  user_index: "user_dashboards"
+  core_indices:
+    core_reglist_index: "alias_reglist"
+    core_blacklist_index: "alias_blacklist"
+    core_exceptionlist_index: "alias_exceptionlist"
+    core_notificationlist_index: "alias_notificationlist"
+    core_pairlist_index: "alias_pairlist"
+    core_stolenlist_index: "alias_stolenlist"
+    core_classification_data: "alias_classification_data"
+    core_mno_data: "alias_mno_data_dump"
+    join_core_mno-blacklist: "alias_join_mno_dump-blacklist"
+    join_core_mno-classification: "alias_join_mno_dump-classification"
+    join_core_mno-notification: "alias_join_mno_dump-notification"
+    core_gsma_tac_data: "alias_gsma_tac_data"

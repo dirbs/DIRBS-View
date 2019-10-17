@@ -1,5 +1,5 @@
 # DIRBS View API
-
+## License
 Copyright (c) 2018-2019 Qualcomm Technologies, Inc.
 
 All rights reserved.
@@ -28,29 +28,23 @@ THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRAN
  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
  POSSIBILITY OF SUCH DAMAGE.
  
- ## Device Identification Registration & Blocking System View (DIRBS-View)
-Device Identification, Registration & Blocking System View (DIRBS-View) is a system developed for
-the authorized entity (ies) to sight all the information stored in DIRBS and its subsystems via
-categorized indicators. DIRBS View provides a platform to visualize the segregated information
-based on customized filters which user can set according to the requirements.
 
-### Documentation
+## Documentation
 [DIRBS-View-User-Guide-v1.0.0.pdf](https://github.com/dirbs/Documentation/tree/master/DIRBS-View/DIRBS-View-User-Guide-v1.0.0.pdf)<br />
 [DIRBS-View-Installation-Guide-v1.0.0.pdf](https://github.com/dirbs/Documentation/tree/master/DIRBS-View/DIRBS-View-Installation-Guide-v1.0.0.pdf)<br />
 [DIRBS-View-SPA-Installation-Guide-v1.0.0.pdf](https://github.com/dirbs/Documentation/tree/master/DIRBS-View/DIRBS-View-SPA-Installation-Guide-v1.0.0.pdf)<br />
 
-
-### Frontend Application Repo
+## Frontend Application Repo
 https://github.com/dirbs/DIRBS-VIEW-Frontend
 
-### Directory structure
+## Directory structure
 This repository contains code for **D-VIEW** part of the **DIRBS**. It contains
 * ``app/`` -- The D-VIEW core server app, to be used as D-VIEW Web Server including database models, apis and resources
 * ``mock/`` -- Sample data files etc which are used in app to be reside here
 * ``tests/`` -- Unit test scripts and Data
 * ``Documentation/`` -- Installation guide for D-VIEW
 
-### Prerequisites
+## Prerequisites
 In order to run a development environment, [Python 3.0+](https://www.python.org/download/releases/3.0/) and
 [Elastic Stack 6.6.0](https://www.elastic.co/blog/elastic-stack-6-6-0-released) are assumed to be already installed.
 
@@ -60,11 +54,11 @@ all commands mentioned in this guide are run from root directory of the project 
 
 On Windows, we assume that a Bash like shell is available (i.e Bash under Cygwin), with GNU make installed.
 
-### Starting a dev environment
+## Starting a dev environment
 The easiest and quickest way to get started is to use local-only environment (i.e everything runs locally, including
 ELK Stack). To setup the local environment, follow the section below:
 
-### Setting up local dev environment
+## Setting up local dev environment
 For setting up a local dev environment we assume that the ```prerequisites``` are met already. To setup a local
 environment:
 * Create database using Elasticsearch (Name and credentials should be same as in [config](/reference-config.yml))

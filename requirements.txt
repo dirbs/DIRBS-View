@@ -33,7 +33,7 @@ requests==2.21.0
 elasticsearch==6.3.1
 flask_apispec==0.8.0
 marshmallow==2.19.1
-flask_cors==3.0.7
+flask_cors==3.0.9
 PyYAML==5.1
 pandas==0.24.2
 prettyprint==0.1.5
